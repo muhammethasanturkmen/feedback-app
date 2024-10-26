@@ -1,0 +1,18 @@
+.header {
+    background-color: #373F68;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px;
+    padding-inline: 0px 24px;
+
+    .add-feedback-button button {
+        background-color: #AD1FEA;
+        color: #F2F4FE;
+        border-radius: 10px;
+        padding: 10px 16px;
+        border: none;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18.79px;
+    }
+}

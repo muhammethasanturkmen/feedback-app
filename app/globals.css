@@ -1,0 +1,77 @@
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: system-ui;
+  background-color: #F7F8FD;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #0c0e16;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  text-align: left;
+  border: 1px solid #dfe3fa;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+@media (width >=768px) {
+  input,
+  select {
+    width: 100%;
+  }
+}

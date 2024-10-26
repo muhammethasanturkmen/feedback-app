@@ -1,9 +1,9 @@
-import DetailsPageComponents from "@/components/details-page/page";
+import Header from "@/components/header/page";
 
 export default function Home() {
   return (
     <>
-    <DetailsPageComponents />
+      <Header />
     </>
   );
 }
