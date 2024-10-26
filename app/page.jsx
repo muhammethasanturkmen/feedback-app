@@ -1,9 +1,9 @@
-import MainPage from "@/components/suggestions-page/page";
+import Header from "@/components/header/page";
 
 export default function Home() {
   return (
     <>
-      <MainPage />
+      <Header />
     </>
   );
 }

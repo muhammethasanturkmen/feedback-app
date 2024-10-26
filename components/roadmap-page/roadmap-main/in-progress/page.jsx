@@ -1,9 +1,9 @@
-import "@/components/roadmap-page/roadmap-main/planned/planned.css"
+import "@/components/roadmap-page/roadmap-main/in-progress/progress.css"
 export default function Progress() {
   return (
     <div className="planned">
         <div className="planned-headers">
-          <h3 className="planned-h3">Planned 2</h3>
+          <h3 className="planned-h3">In-progress 2</h3>
           <p className="planned-title">Ideas prioritized for research</p>
         </div>
         <div className="planned-card">

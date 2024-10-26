@@ -1,0 +1,34 @@
+.roadmapheader {
+  padding: 27px 32px;
+  background-color: #373F68;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34.68px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.roadmap-btn {
+  padding: 12px 24px;
+  border: transparent;
+  background-color: #AD1FEA;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20.23px;
+  text-align: left;
+  color: #F2F4FE;
+}
+
+@media(max-width:375px) {
+  .roadmapheader {
+    width: 375px;
+  }
+}
