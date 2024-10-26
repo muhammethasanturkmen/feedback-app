@@ -3,7 +3,42 @@
     display: flex;
     justify-content: space-between;
     padding: 8px 0px;
-    padding-inline: 0px 24px;
+    padding-inline: 24px;
+    align-items: center;
+
+    .suggestions-counter {
+      display: none;
+    }
+
+    .short-by {
+        p {
+            color: #F2F4FE;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 18.79px;
+        }
+    
+        .filter-options {
+          display: none;
+    
+          p {
+            display: flex;
+            align-items: center;
+            color: #373F68;
+          }
+        }
+        
+        &:hover .filter-options {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          position: absolute;
+          padding: 12px;
+          background-color: #FFFFFF;
+          box-shadow: 0px 10px 20px 0px #48549F40;
+          border-radius: 8px;
+        }
+    }
 
     .add-feedback-button button {
         background-color: #AD1FEA;
