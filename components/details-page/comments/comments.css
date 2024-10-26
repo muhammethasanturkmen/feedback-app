@@ -1,53 +1,67 @@
-body {
-    background-color: #F7F8FD;
-}
-
-
-.comment {
-    width: 730px;
-    margin: 0 auto;
-    font-family: 'Jost', sans-serif;
-    background-color: #ffff;
-    padding: 24px 34px;
+.comments {
+    background-color: #FFFFFF;
     border-radius: 10px;
-}
+    padding: 24px;
+    margin-inline: 24px;
 
-.first-comment {
-    display: flex;
-    gap: 32px;
-}
+    .title {
+        h1 {
+            color: #3A4374;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26.01px;
+            letter-spacing: -0.25px;
+        }
+    }
 
-.user-title {
-    display: flex;
-    justify-content: space-between;
-}
+    .comments-item {
+        padding: 24px 0px;
+        border-bottom: 1px solid #8C92B3;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
 
-.user-header {
-    display: flex;
-    flex-direction: column;
-}
+        .user-info {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            justify-content: space-between;
 
-.c-btn {
-    background-color: transparent;
-    border: transparent;
-    color: #4661E6;
-}
+            .user-texts {
+                margin-right: auto;
 
-.c-name {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20.23px;
-    letter-spacing: -0.1944444477558136px;
-    text-align: left;
-    color: #3A4374;
-}
+                .name-surname {
+                    color: #3A4374;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 18.79px;
+                    letter-spacing: -0.1805555522441864px;
+                }
 
-.c-mail {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20.23px;
-    text-align: left;
-    color: #647196;
-}
+                .user-name {
+                    color: #647196;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 18.79px;
+                }
+            }
 
+            .reply-button {
+                background-color: transparent;
+                border: none;
+                color: #4661E6;
+            }
+        }
+
+        p {
+            color: #647196;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18.79px;
+        }
+    }
+    
+    .comments-item:last-child {
+        border-bottom: none;
+    }
+}

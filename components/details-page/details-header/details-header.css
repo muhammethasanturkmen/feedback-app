@@ -1,0 +1,20 @@
+.details-header {
+    margin-inline: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .back-button {
+        background-color: transparent;
+        color: #647196;
+        border: none;
+    }
+        
+    .edit-button {
+        background-color: #4661E6;
+        color: #F2F4FE;
+        padding: 10px 16px;
+        border-radius: 10px;
+        border: none;
+    }
+}
