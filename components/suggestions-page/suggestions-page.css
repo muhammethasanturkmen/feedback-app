@@ -1,0 +1,7 @@
+.container:has(.card-lists) .empty-container {
+    display: none;
+  }
+  
+.container:not(:has(.card-lists)) .empty-container {
+    display: flex;
+}
