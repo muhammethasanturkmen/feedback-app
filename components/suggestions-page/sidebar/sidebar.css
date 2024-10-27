@@ -31,18 +31,29 @@
         }
     }
 
-    dialog {
-        background-color: #F7F8FD;
-        height: 100vh;
-        border: none;
-        padding: 24px;
-        transition: width 0.8s ease;
+    .dialog {
+        display: none;
+    }
+
+    .active {
+        display: block;
+        position: fixed;
         top: 72px;
+        right: 0;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
 
         .dialog-content {
             display: flex;
             flex-direction: column;
             gap: 24px;
+            background-color: #F7F8FD;
+            border: none;
+            padding: 24px;
+            height: 100vh;
+            width: 75%;
+            position: fixed;
+            right: 0;
         }
     }
 

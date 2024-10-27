@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { GoBack, Menu } from "@/helpers/icons";
 import Roadmap from "./roadmap";
 import Categories from "./filter";
@@ -9,21 +9,6 @@ import "./sidebar.css"
 
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
-  const modalRef = useRef();
-
-  const openDialog = () => {
-    setOpen(true);
-    if (modalRef.current) {
-      modalRef.current.showModal();
-    }
-  };
-
-  const closeDialog = () => {
-    setOpen(false);
-    if (modalRef.current) {
-      modalRef.current.close();
-    }
-  };
 
   return (
     <div className="sidebar">
@@ -34,18 +19,18 @@ export default function Sidebar() {
 
       <div className="modal-buttons">
         {open === true ?
-          <button onClick={() => closeDialog()}><GoBack /></button>
+          <button onClick={() => setOpen(false)}><GoBack /></button>
           :
-          <button onClick={() => openDialog()}><Menu /></button>
+          <button onClick={() => setOpen(true)}><Menu /></button>
         }
       </div>
 
-      <dialog className="dialog-form" ref={modalRef} open={open} style={{ width: open ? "75%" : "0%" }}>
+      <div className={open === true ? "dialog active" : "dialog"} open={open} style={{ width: open ? "100%" : "0%" }}>
         <div className="dialog-content">
           <Categories />
           <Roadmap />
         </div>
-      </dialog>
+      </div>
     </div>
   )
 }
