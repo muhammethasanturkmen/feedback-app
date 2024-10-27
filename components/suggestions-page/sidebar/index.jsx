@@ -1,50 +1,59 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GoBack, Menu } from "@/helpers/icons";
 import Roadmap from "./roadmap";
 import Categories from "./filter";
-import "./sidebar.css"
-
+import "./sidebar.css";
 
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>
-    {window.innerWidth < 768 ?    
-      <div className="sidebar">
-        <div className="texts">
-          <h3>Frontend Mentor</h3>
-          <p>Feedback Board</p>
-        </div>
+      {isMobile ?    
+        <div className="sidebar">
+          <div className="texts">
+            <h3>Frontend Mentor</h3>
+            <p>Feedback Board</p>
+          </div>
 
-        <div className="modal-buttons">
-          {open === true ?
-            <button onClick={() => setOpen(false)}><GoBack /></button>
-            :
-            <button onClick={() => setOpen(true)}><Menu /></button>
-          }
-        </div>
+          <div className="modal-buttons">
+            {open ? (
+              <button onClick={() => setOpen(false)}><GoBack /></button>
+            ) : (
+              <button onClick={() => setOpen(true)}><Menu /></button>
+            )}
+          </div>
 
-        <div className={open === true ? "dialog active" : "dialog"} open={open} style={{ width: open ? "100%" : "0%" }}>
-          <div className="dialog-content">
-            <Categories />
-            <Roadmap />
+          <div className={open ? "dialog active" : "dialog"} style={{ width: open ? "100%" : "0%" }}>
+            <div className="dialog-content">
+              <Categories />
+              <Roadmap />
+            </div>
           </div>
         </div>
-      </div>
-      :
-      <div className="sidebar-tablet">
-        <div className="texts">
-          <h3>Frontend Mentor</h3>
-          <p>Feedback Board</p>
-        </div>
+        :
+        <div className="sidebar-tablet">
+          <div className="texts">
+            <h3>Frontend Mentor</h3>
+            <p>Feedback Board</p>
+          </div>
 
-        <Categories />
-        <Roadmap />
-      </div>
-    }
+          <Categories />
+          <Roadmap />
+        </div>
+      }
     </>
-  )
+  );
 }
