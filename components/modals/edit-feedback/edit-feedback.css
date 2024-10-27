@@ -1,0 +1,98 @@
+
+.edit-feedback {
+    margin: 34px 0px;
+    margin-inline: 24px;
+
+    .back-button {
+        margin-bottom: 45px;
+        background-color: transparent;
+        border: none;
+        color: #647196;
+    }
+
+    form {
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        padding: 44px 24px 24px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        
+        .circle {
+            background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+            color: #FFFFFF;
+            padding: 14px;
+            width: 52px;
+            border-radius: 50%;
+            position: relative;
+            top: -70px;
+        }
+    
+        h1 {
+            color: #3A4374;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26.01px;
+            letter-spacing: -0.25px;
+        }
+    
+        .form-item {
+            label {
+                color: #3A4374; 
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 18.79px;
+                letter-spacing: -0.1805555522441864px;
+            }
+    
+            p {
+                color: #647196;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 18.79px;
+                margin-bottom: 16px;
+            }
+    
+            input {
+                border: none;
+                background-color: #F7F8FD;
+                border-radius: 5px;
+            }
+            
+            &:nth-child(6) input {
+                min-height: 120px;
+            }
+        }
+    
+
+        .form-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+    
+            .save {
+                background-color: #AD1FEA;
+                color: #F2F4FE;
+                border: none;
+                border-radius: 10px;
+                padding: 10px;
+            }
+    
+            .cancel {
+                background-color: #3A4374;
+                color: #F2F4FE;
+                border: none;
+                border-radius: 10px;
+                padding: 10px;
+            }
+
+            .delete {
+                background-color: #D73737;
+                color: #F2F4FE;
+                border: none;
+                border-radius: 10px;
+                padding: 10px;
+            }
+        }
+    }
+}

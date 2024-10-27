@@ -27,3 +27,9 @@ export function Plus() {
     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"><path fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"/></svg>
   );
 }
+
+export function Pen() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 20 20"><path fill="currentColor" d="M11 9.27V0l6 11l-4 6H7l-4-6L9 0v9.27a2 2 0 1 0 2 0M6 18h8v2H6z"/></svg>
+  );
+}
