@@ -9,6 +9,7 @@ export default function AddComment() {
         <div className="add-comment-footer">
             <p className="char-left">250 Characters left</p>
             <button className="post-button">Post Comment</button>
+            <button>kemal</button>
         </div>
     </div>
   )
