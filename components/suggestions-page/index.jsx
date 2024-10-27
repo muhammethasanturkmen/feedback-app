@@ -8,9 +8,12 @@ export default function MainPage() {
     return (
         <div className="container">
             <Sidebar />
-            <Header />
-            <EmptyContainer />
-            <CardLists />
+            
+            <div className="main">
+                <Header />
+                <EmptyContainer />
+                <CardLists />
+            </div>
         </div>
     )
 }

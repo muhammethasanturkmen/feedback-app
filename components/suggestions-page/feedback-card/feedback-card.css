@@ -70,3 +70,11 @@
         margin-inline: 39px;
     }
 }
+
+@media(width >= 1110px) {
+    .details-page {
+        .card {
+            margin-inline: 165px;
+        }    
+    }
+}
