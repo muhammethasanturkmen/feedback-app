@@ -71,3 +71,9 @@
     }
   }
 }
+
+@media(width >= 1110px) {
+  .roadmapheader {
+    margin-inline: 165px;
+  }
+}

@@ -5,3 +5,29 @@
 .container:not(:has(.card)) .empty-container {
     display: flex;
 }
+
+@media(width >= 1110px) {
+  .container {
+    display: flex;
+    justify-content: center;
+
+    .sidebar-tablet {
+      width: 255px;
+      display: flex;
+      flex-direction: column;
+      margin: 40px 0px;
+
+      .texts {
+        width: 255px;
+      }
+
+      .roadmap {
+        width: 255px;
+      }
+    }
+
+    .main {
+      width: 825px;
+    }
+  }
+}

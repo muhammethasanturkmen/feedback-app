@@ -121,3 +121,9 @@
         }
     }    
 }
+
+@media(width >= 1110px) {
+    .edit-feedback {
+        margin-inline: 165px;
+    }    
+}

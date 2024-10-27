@@ -24,3 +24,9 @@
         margin-inline: 39px;
     }    
 }
+
+@media(width >= 1110px) {
+    .details-header {
+        margin-inline: 165px;
+    }    
+}

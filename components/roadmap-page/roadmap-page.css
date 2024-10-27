@@ -62,3 +62,10 @@
     }
   }
 }
+
+@media(width >= 1110px) {
+  .situations {
+    gap: 30px;
+    margin-inline: 165px;
+  }
+}

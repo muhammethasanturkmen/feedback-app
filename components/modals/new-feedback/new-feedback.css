@@ -108,3 +108,9 @@
         }
     }    
 }
+
+@media(width >= 1110px) {
+    .new-feedback {
+        margin-inline: 165px;
+    }    
+}
