@@ -1,5 +1,7 @@
 import { Comments, UpVote } from "@/helpers/icons";
 import "./feedback-card.css";
+import LikeButton from "../feedback-like";
+
 
 export default function Card() {
     return (
@@ -14,7 +16,7 @@ export default function Card() {
             <div className="like-and-comments">
                 <div className="likes">
                     <UpVote />
-                    <p>112</p>
+                    <LikeButton />
                 </div>
 
                 <div className="comments">
