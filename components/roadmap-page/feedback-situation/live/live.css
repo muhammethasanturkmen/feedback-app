@@ -1,0 +1,114 @@
+.live {
+  .live-texts {
+    padding: 24px 0px;
+    margin-inline: 24px;
+  
+    h3 {
+      color: #3A4374;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26.01px;
+      letter-spacing: -0.25px;
+    }
+  
+    p {
+      color: #647196;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 18.79px;
+    }
+  }
+    
+  .card-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+    
+    .card {
+      background-color: #FFFFFF;
+      padding: 24px;
+      border-radius: 10px;
+      margin-inline: 24px;
+      border-top: 10px solid #62BCFA;
+    
+      .status {
+        margin-bottom: 15px;
+    
+        p {
+          color: #647196;
+          display: flex;
+          align-items: center;
+          gap: 9px;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 18.79px;
+    
+          span {
+            color: #62BCFA;
+          }
+        }
+      }
+    
+      .card-texts {
+          margin-bottom: 10px;
+    
+          h4 {
+              color: #3A4374;
+              font-size: 13px;
+              font-weight: 700;
+              line-height: 18.79px;
+              letter-spacing: -0.1805555522441864px;
+              margin-bottom: 9px;
+          }
+    
+          p {
+              color: #647196;
+              font-size: 13px;
+              font-weight: 400;
+              line-height: 18.79px;
+          }
+      }
+    
+      .card-category {
+          background-color: #F2F4FF;
+          color: #4661E6;
+          padding: 5px 16px;
+          border-radius: 10px;
+          display: inline-block;
+          margin-bottom: 18px;
+      }
+    
+      .like-and-comments {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+    
+          .likes {
+              display: flex;
+              align-items: center;
+              border-radius: 10px;
+              color: #4661E6;
+              background-color: #F2F4FE;
+              padding: 6px 13px;
+              gap: 10px;
+    
+              p {
+                  color: #3A4374;
+              }
+          }
+    
+          .comments {
+              display: flex;
+              align-items: center;
+              gap: 4px;
+              color: #CDD2EE;
+    
+              p {
+                  color: #3A4374;
+              }
+          }
+      }
+    }
+  }
+}
