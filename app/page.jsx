@@ -1,7 +1,9 @@
-import MainPage from "@/components/suggestions-page";
+import LoginPage from "@/components/login/page";
+
+
 
 export default function Home() {
   return (
-    <MainPage />
+    <LoginPage />
   );
 }
