@@ -1,4 +1,4 @@
-import DetailsComponent from "@/components/details-page/page";
+import DetailsComponent from "@/components/details-page";
 
 export default function FeedbackDetailPage() {
     return (

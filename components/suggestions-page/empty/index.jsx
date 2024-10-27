@@ -1,4 +1,4 @@
-import AddFeedbackButton from "@/components/header/add-feedback-button/page";
+import AddFeedbackButton from "@/components/header/add-feedback-button";
 import "./empty-container.css";
 
 export default function EmptyContainer() {

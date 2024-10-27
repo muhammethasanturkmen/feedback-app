@@ -1,4 +1,4 @@
-import RoadmapPage from "@/components/roadmap-page/page";
+import RoadmapPage from "@/components/roadmap-page";
 
 export default function Roadmap() {
     return (

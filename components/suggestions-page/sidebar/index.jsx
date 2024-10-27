@@ -2,8 +2,8 @@
 
 import { useRef, useState } from "react";
 import { GoBack, Menu } from "@/helpers/icons";
-import Roadmap from "./roadmap/page";
-import Categories from "./filter/page";
+import Roadmap from "./roadmap";
+import Categories from "./filter";
 import "./sidebar.css"
 
 

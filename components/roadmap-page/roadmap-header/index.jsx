@@ -1,4 +1,4 @@
-import AddFeedbackButton from "@/components/header/add-feedback-button/page"
+import AddFeedbackButton from "@/components/header/add-feedback-button"
 import "./roadmap-header.css";
 
 export default function RoadmapHeader() {

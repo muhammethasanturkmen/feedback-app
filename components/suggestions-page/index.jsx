@@ -1,7 +1,7 @@
-import Header from "../header/page";
-import EmptyContainer from "./empty/page";
-import CardLists from "./feedback-card-lists/page";
-import Sidebar from "./sidebar/page";
+import Header from "../header";
+import EmptyContainer from "./empty";
+import CardLists from "./feedback-card-lists";
+import Sidebar from "./sidebar";
 import "./suggestions-page.css";
 
 export default function MainPage() {

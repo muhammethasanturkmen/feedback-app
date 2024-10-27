@@ -1,10 +1,10 @@
 "use client"
 
 import { useState } from "react";
-import Progress from "./feedback-situation/in-progress/page";
-import Live from "./feedback-situation/live/page";
-import Planned from "./feedback-situation/planned/page";
-import RoadmapHeader from "./roadmap-header/page";
+import Progress from "./feedback-situation/in-progress";
+import Live from "./feedback-situation/live";
+import Planned from "./feedback-situation/planned";
+import RoadmapHeader from "./roadmap-header";
 import "./roadmap-page.css";
 
 export default function RoadmapPage() {

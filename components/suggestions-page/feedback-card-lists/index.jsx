@@ -1,4 +1,4 @@
-import Card from "../feedback-card/page";
+import Card from "../feedback-card";
 import "./card-lists.css"
 
 export default function CardLists() {
