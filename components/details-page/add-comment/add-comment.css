@@ -44,3 +44,9 @@
         }
     }
 }
+
+@media(width >= 768px) {
+    .add-comment {
+        margin-inline: 39px;
+    }    
+}

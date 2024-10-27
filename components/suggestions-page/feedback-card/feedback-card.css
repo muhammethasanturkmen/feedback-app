@@ -64,3 +64,9 @@
         }
     }
 }
+
+@media(width >= 768px) {
+    .card {
+        margin-inline: 39px;
+    }
+}

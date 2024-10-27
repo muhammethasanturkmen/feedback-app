@@ -34,3 +34,40 @@
     border: none;
   }
 }
+
+@media(width >= 768px) {
+  .roadmapheader {
+    padding: 32px 27px;
+    margin-inline: 39px;
+    margin-top: 56px;
+    border-radius: 10px;
+    
+    .header-navigation {
+      button {
+        color: #FFFFFF;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18.79px;
+        border: none;
+        background-color: transparent;
+      }
+      
+      h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34.68px;
+        letter-spacing: -0.3333333432674408px;
+        text-align: left;
+        color: #FFFFFF;
+      }
+    }
+  
+    .add-feedback-button button {
+      background-color: #AD1FEA;
+      color: #F2F4FE;
+      border-radius: 10px;
+      padding: 10px 16px;
+      border: none;
+    }
+  }
+}

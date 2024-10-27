@@ -18,3 +18,9 @@
         border: none;
     }
 }
+
+@media(width >= 768px) {
+    .details-header {
+        margin-inline: 39px;
+    }    
+}

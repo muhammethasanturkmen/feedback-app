@@ -9,8 +9,8 @@ export default function MainPage() {
         <div className="container">
             <Sidebar />
             <Header />
-            <CardLists />
             <EmptyContainer />
+            <CardLists />
         </div>
     )
 }

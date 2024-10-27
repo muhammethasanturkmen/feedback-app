@@ -42,3 +42,10 @@
         line-height: 18.79px;
     }
 }
+
+@media(width >= 768px) {
+    .empty-container {
+        margin-top: 40px;
+        margin-inline: 39px;
+    }
+}
